@@ -1,0 +1,12 @@
+{
+    "id": "skeleton",
+    "name": "Esqueleto",
+    "level": 1,
+    "description": "Um cadáver esquelético simples e patético, pode facilmente ser derrotado...",
+    "icon": "https://media.discordapp.net/attachments/1262513860548759644/1264031218979049472/skeleton.png",
+    "stats": {
+        "life": 35,
+        "damage": 24,
+        "resistance": 2
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "emojis": {
+        "gold": "<a:gold:1264434752555847730>",
+        "diamond": "<a:diamond:1264434777339990026>",
+        "nimekoin": "<a:nimekoin:1264434825696120923>",
+        "health": "<:health:1264434885246976011>",
+        "mana": "<:mana:1264434860773343243>"
+    },
+    "nimekai": {
+        "icon": "https://i.imgur.com/EMV93sU.gif",
+        "embedAuthor": {
+            "name": "⋆ 🌸 Nimekai 🌸 ⋆",
+            "iconURL": "https://i.imgur.com/EMV93sU.gif"
+        }
+    }
+}

@@ -1,0 +1,455 @@
+{
+  "inDungeon": [],
+  "events": [],
+  "week": [],
+  "classIcons": [
+    {
+      "classe": "Guerreiro",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1262515946216755260/warrior.png"
+    },
+    {
+      "classe": "Mago",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1262516199510638694/mage.png"
+    },
+    {
+      "classe": "Caçador",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1262516267781455953/hunter.png"
+    },
+    {
+      "classe": "Ladino",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1262516716278382663/rogue.png"
+    },
+    {
+      "classe": "Clérigo",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1264389546376958013/Clerigo.png"
+    },
+    {
+      "classe": "Druida",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1264384301143691355/Druida.png"
+    },
+    {
+      "classe": "Bardo",
+      "iconURL": "https://media.discordapp.net/attachments/1262513860548759644/1264383899270905948/Bardo.png"
+    }
+  ],
+  "titles": [
+    "BETA TESTER",
+    "Novato"
+  ],
+  "players": [
+    {
+      "id": "545314209865531398",
+      "status": {
+        "healthPoints": 190,
+        "maxHealthPoints": 190,
+        "manaPoints": 190,
+        "maxManaPoints": 190
+      },
+      "profile": {
+        "name": "Kurisu",
+        "gender": "female",
+        "level": 1,
+        "experience": 1000,
+        "tier": "F",
+        "race": "feral",
+        "class": "warrior",
+        "profession": "blacksmith",
+        "religion": {
+          "name": "guerra",
+          "faith": 0
+        },
+        "attributes": {
+          "points": {
+            "availablePoints": 0,
+            "spentPoints": 0
+          },
+          "vitality": 9,
+          "resistence": 6,
+          "strength": 12,
+          "dexterity": 7,
+          "intelligence": 1,
+          "wisdom": 1,
+          "charisma": 1
+        },
+        "badges": [],
+        "titles": {
+          "equipped": "BETA TESTER",
+          "list": [
+            "Novato",
+            "BETA TESTER"
+          ]
+        }
+      },
+      "inventory": {
+        "equipped": {
+          "weapons": {
+            "mainHand": "wooden_sword",
+            "offHand": {}
+          },
+          "accessories": {
+            "head": {},
+            "face": {},
+            "back": {},
+            "ring": {},
+            "necklace": {},
+            "glove": {},
+            "waist": {}
+          },
+          "armor": {
+            "helmet": {},
+            "chestplate": {},
+            "leggings": {},
+            "boots": {}
+          }
+        },
+        "items": [],
+        "weapons": [],
+        "tools": [
+          {
+            "name": "Martelo de ferreiro básico",
+            "quantity": 0,
+            "id": "basic_blacksmith_hammer"
+          }
+        ],
+        "equipment": [],
+        "consumables": {
+          "selfUse": [
+            {
+              "name": "Poção de vida",
+              "quantity": 5,
+              "id": "life_potion"
+            }
+          ],
+          "fightUse": [
+            {
+              "name": "Bombinha",
+              "quantity": 10,
+              "id": "little_bomb"
+            }
+          ]
+        },
+        "musicSheets": {
+          "toLearn": [],
+          "musics": []
+        }
+      },
+      "skills": {
+        "passiveSkills": [],
+        "activeSkills": [],
+        "ultimateSkills": [],
+        "uniqueSkill": {}
+      }
+    },
+    {
+      "id": "817218205219160114",
+      "status": {
+        "healthPoints": 170,
+        "maxHealthPoints": 170,
+        "manaPoints": 170,
+        "maxManaPoints": 170
+      },
+      "profile": {
+        "name": "himo",
+        "gender": "male",
+        "level": 1,
+        "experience": 1000,
+        "tier": "F",
+        "race": "elf",
+        "class": "hunter",
+        "profession": "alchemist",
+        "religion": {
+          "name": null,
+          "faith": 0
+        },
+        "attributes": {
+          "points": {
+            "availablePoints": 0,
+            "spentPoints": 0
+          },
+          "vitality": 7,
+          "resistence": 3,
+          "strength": 3,
+          "dexterity": 13,
+          "intelligence": 3,
+          "wisdom": 7,
+          "charisma": 1
+        },
+        "badges": [],
+        "titles": {
+          "equipped": "BETA TESTER",
+          "list": [
+            "Novato",
+            "BETA TESTER"
+          ]
+        }
+      },
+      "inventory": {
+        "equipped": {
+          "weapons": {
+            "mainHand": {
+              "name": "Arco básico",
+              "id": "basic_bow"
+            },
+            "offHand": {
+              "name": "Adaga básica",
+              "id": "basic_dagger"
+            }
+          },
+          "accessories": {
+            "head": {},
+            "face": {},
+            "back": {},
+            "ring": {},
+            "necklace": {},
+            "glove": {},
+            "waist": {}
+          },
+          "armor": {
+            "helmet": {},
+            "chestplate": {},
+            "leggings": {},
+            "boots": {}
+          }
+        },
+        "items": [],
+        "weapons": [],
+        "tools": [
+          {
+            "name": "Suporte de poções portátil",
+            "quantity": 0,
+            "id": "portable_brewing_stand"
+          }
+        ],
+        "equipment": [],
+        "consumables": {
+          "selfUse": [
+            {
+              "name": "Poção de vida",
+              "quantity": 5,
+              "id": "life_potion"
+            }
+          ],
+          "fightUse": [
+            {
+              "name": "Emboscada portátil",
+              "quantity": 10,
+              "id": "portable_ambush"
+            }
+          ]
+        },
+        "musicSheets": {
+          "toLearn": [],
+          "musics": []
+        }
+      },
+      "skills": {
+        "passiveSkills": [],
+        "activeSkills": [],
+        "ultimateSkills": [],
+        "uniqueSkill": {}
+      }
+    },
+    {
+      "id": "619596643590995979",
+      "status": {
+        "healthPoints": 170,
+        "maxHealthPoints": 170,
+        "manaPoints": 170,
+        "maxManaPoints": 170
+      },
+      "profile": {
+        "name": "all",
+        "gender": "male",
+        "level": 1,
+        "experience": 1000,
+        "tier": "F",
+        "race": "elf",
+        "class": "hunter",
+        "profession": "blacksmith",
+        "religion": {
+          "name": "guerra",
+          "faith": 0
+        },
+        "attributes": {
+          "points": {
+            "availablePoints": 0,
+            "spentPoints": 0
+          },
+          "vitality": 7,
+          "resistence": 3,
+          "strength": 3,
+          "dexterity": 13,
+          "intelligence": 3,
+          "wisdom": 7,
+          "charisma": 1
+        },
+        "badges": [],
+        "titles": {
+          "equipped": "BETA TESTER",
+          "list": [
+            "Novato",
+            "BETA TESTER"
+          ]
+        }
+      },
+      "inventory": {
+        "equipped": {
+          "weapons": {
+            "mainHand": "basic_bow",
+            "offHand": "basic_dagger"
+          },
+          "accessories": {
+            "head": {},
+            "face": {},
+            "back": {},
+            "ring": {},
+            "necklace": {},
+            "glove": {},
+            "waist": {}
+          },
+          "armor": {
+            "helmet": {},
+            "chestplate": {},
+            "leggings": {},
+            "boots": {}
+          }
+        },
+        "items": [],
+        "weapons": [],
+        "tools": [
+          {
+            "name": "Martelo de ferreiro básico",
+            "quantity": 0,
+            "id": "basic_blacksmith_hammer"
+          }
+        ],
+        "equipment": [],
+        "consumables": {
+          "selfUse": [
+            {
+              "id": "life_potion",
+              "quantity": 5
+            }
+          ],
+          "fightUse": [
+            {
+              "id": "portable_ambush",
+              "quantity": 10
+            }
+          ]
+        },
+        "musicSheets": {
+          "toLearn": [],
+          "musics": []
+        }
+      },
+      "skills": {
+        "passiveSkills": [],
+        "activeSkills": [],
+        "ultimateSkills": [],
+        "uniqueSkill": {}
+      }
+    },
+    {
+      "id": "579364877014138890",
+      "status": {
+        "healthPoints": 180,
+        "maxHealthPoints": 180,
+        "manaPoints": 180,
+        "maxManaPoints": 180
+      },
+      "profile": {
+        "name": "MarioBros",
+        "gender": "male",
+        "level": 1,
+        "experience": 1000,
+        "tier": "F",
+        "race": "dragonborn",
+        "class": "warrior",
+        "profession": "chef",
+        "religion": {
+          "name": "comercio",
+          "faith": 0
+        },
+        "attributes": {
+          "points": {
+            "availablePoints": 0,
+            "spentPoints": 0
+          },
+          "vitality": 8,
+          "resistence": 8,
+          "strength": 11,
+          "dexterity": 6,
+          "intelligence": 1,
+          "wisdom": 2,
+          "charisma": 1
+        },
+        "badges": [],
+        "titles": {
+          "equipped": "BETA TESTER",
+          "list": [
+            "Novato",
+            "BETA TESTER"
+          ]
+        }
+      },
+      "inventory": {
+        "equipped": {
+          "weapons": {
+            "mainHand": "wooden_sword",
+            "offHand": {}
+          },
+          "accessories": {
+            "head": {},
+            "face": {},
+            "back": {},
+            "ring": {},
+            "necklace": {},
+            "glove": {},
+            "waist": {}
+          },
+          "armor": {
+            "helmet": {},
+            "chestplate": {},
+            "leggings": {},
+            "boots": {}
+          }
+        },
+        "items": [],
+        "weapons": [],
+        "tools": [
+          {
+            "name": "Panela básica",
+            "quantity": 0,
+            "id": "basic_pan"
+          }
+        ],
+        "equipment": [],
+        "consumables": {
+          "selfUse": [
+            {
+              "id": "life_potion",
+              "quantity": 5
+            }
+          ],
+          "fightUse": [
+            {
+              "id": "little_bomb",
+              "quantity": 10
+            }
+          ]
+        },
+        "musicSheets": {
+          "toLearn": [],
+          "musics": []
+        }
+      },
+      "skills": {
+        "passiveSkills": [],
+        "activeSkills": [],
+        "ultimateSkills": [],
+        "uniqueSkill": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "id": "wooden_sword",
+    "name": "Espada de madeira",
+    "description": "Uma simples espada de madeira, boa sorte!",
+    "element": "none",
+    "class": "warrior",
+    "level": 1,
+    "damage": 2,
+    "bonus": 10
+}

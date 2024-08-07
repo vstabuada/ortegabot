@@ -1,0 +1,12 @@
+{
+    "id": "slime",
+    "name": "Slime",
+    "level": 1,
+    "description": "Um simples slime fofo e macio, ele adora comer tecido!",
+    "icon": "https://cdn.discordapp.com/attachments/1262513860548759644/1266272113535225897/slime.png",
+    "stats": {
+        "life": 20,
+        "damage": 18,
+        "resistence": 0
+    }
+}

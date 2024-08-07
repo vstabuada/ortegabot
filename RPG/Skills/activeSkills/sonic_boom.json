@@ -1,0 +1,7 @@
+{
+    "id": "sonic_boom",
+    "name": "Sonic Boom",
+    "description": "Solta um estrondo sônico sólido.",
+    "class": "mage",
+    "type": "magic"
+}
