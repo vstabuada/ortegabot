@@ -3,49 +3,60 @@ const { SlashCommandBuilder, CommandInteraction, PermissionFlagsBits, Embed, Emb
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName('dado')
-    .setDescription('Rola um dado de 6 lados, ou quantos lados especificados!')
-    .setDefaultMemberPermissions(PermissionFlagsBits.UseApplicationCommands)
-    .addIntegerOption(option =>
-        option.setName('lados')
-        .setDescription('Quantos lados você quer que o dado tenha?')
-        .setMinValue(2)
+        .setName('dado')
+        .setDescription('Rola um dado de 6 lados, ou quantos lados especificados!')
+        .setDefaultMemberPermissions(PermissionFlagsBits.UseApplicationCommands)
+        .addIntegerOption(option =>
+            option.setName('lados')
+                .setDescription('Quantos lados você quer que o dado tenha?')
+                .setMinValue(2)
+                .setMaxValue(9999999)
         ),
-    async execute(interaction){
+    async execute(interaction) {
 
-        let lados = interaction.options.getInteger('lados')
+        const lados = interaction.options.getInteger('lados') || 6
 
-        if(typeof lados !== Number) lados = 6
-
-        function getResult(x){
+        function getResult(x) {
             return Math.floor(Math.random() * (x - 2 + 1) + 2)
         }
 
+        let arrs = [`O dado caiu e deu **${getResult(lados)}**!`]
+
+        function getDesc(arr) {
+            let result = ''
+            arr.forEach(x => { result += `${x}\n` })
+            return result
+        }
 
         const embed = new EmbedBuilder()
-        .setTitle('Dado')
-        .setDescription(`O dado caiu e deu **${getResult(lados)}**!`)
-        .setTimestamp()
-        .setColor('#6530ff')
-        .setFooter({ text: `Dado de ${lados} lados.` })
+            .setTitle('Dado')
+            .setDescription(getDesc(arrs))
+            .setTimestamp()
+            .setColor('#6530ff')
+            .setFooter({ text: `Dado de ${lados} lados.` })
 
         const reroll = new ButtonBuilder()
-        .setCustomId('reroll')
-        .setEmoji('🔃')
-        .setLabel('Rodar novamente')
-        .setStyle(ButtonStyle.Primary)
+            .setCustomId('reroll')
+            .setEmoji('🔃')
+            .setLabel('Rodar novamente')
+            .setStyle(ButtonStyle.Primary)
 
         const row = new ActionRowBuilder().addComponents([reroll])
 
-        const sent = await interaction.reply({content: `<@${interaction.user.id}>`, embeds: [embed], components: [row]})
+        const sent = await interaction.reply({ content: `<@${interaction.user.id}>`, embeds: [embed], components: [row] })
 
         const collector = sent.createMessageComponentCollector({ componentType: ComponentType.Button, time: 300000 })
 
         collector.on('collect', i => {
             if (i.user.id === interaction.user.id) {
-                i.reply({content:`<@${interaction.user.id}>`, embeds: [embed.setDescription(`O dado caiu e deu **${getResult(lados)}**!`)]})
+                if (arrs.length < 10) {
+                    arrs.push(`O dado caiu e deu **${getResult(lados)}**!`)
+                    i.update({ content: `${interaction.user}`, embeds: [embed.setDescription(getDesc(arrs))] })
+                } else {
+                    i.reply({ content: `Você atingiu o número máximo de rodadas por comando!`, ephemeral: true })
+                }
             } else {
-                i.reply({content:`Esse botão não é para você!`, ephemeral: true})
+                i.reply({ content: `Esse botão não é para você!`, ephemeral: true })
             }
         })
     }
