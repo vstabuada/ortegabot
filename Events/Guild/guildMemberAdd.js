@@ -19,7 +19,7 @@ module.exports = {
                 .setColor('Purple')
                 .setTimestamp()
 
-            await welcomeChannel.send({ content: `${user}`, embeds: [welcomeEmbed] })
+            // await welcomeChannel.send({ content: `${user}`, embeds: [welcomeEmbed] })
             await member.roles.add(memberRole)
 
             const generalMessages = [
@@ -33,7 +33,7 @@ module.exports = {
             const max = generalMessages.length - 1
             const random = Math.floor(Math.random() * (max - min + 1)) + min
 
-            await generalChannel.send({ content: generalMessages[random] })
+            // await generalChannel.send({ content: generalMessages[random] })
 
         } catch (e) {
             console.log(e)

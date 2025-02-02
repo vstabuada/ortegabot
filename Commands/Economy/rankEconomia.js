@@ -91,12 +91,12 @@ module.exports = {
 
         const backward = new ButtonBuilder()
             .setStyle(ButtonStyle.Secondary)
-            .setEmoji('1248682961469964388')
+            .setEmoji('1276576296549224540')
             .setCustomId('backward')
 
         const forward = new ButtonBuilder()
             .setStyle(ButtonStyle.Secondary)
-            .setEmoji('1248682290297700362')
+            .setEmoji('1276576349590519818')
             .setCustomId('forward')
 
         const row = new ActionRowBuilder()

@@ -6,11 +6,12 @@ module.exports = {
         .setDescription('Jogue no jackpot!')
         .setDefaultMemberPermissions(PermissionFlagsBits.UseApplicationCommands),
     async execute(interaction) {
-        const espaco = '<:espaca_nk:1248685452832276600>'
-        const setaR = '<:rightarrow_nk:1248682290297700362>'
-        const setaL = '<:leftarrow_nk:1248682961469964388>'
+        const espaco = '<:blank:1326626910947512330>'
+        const setaR = '<:rightarrow:1276576349590519818>'
+        const setaL = '<:leftarrow:1276576296549224540> '
         const dima = '<a:dima_nk:1177204505163603968>'
         const star = '<a:estrela_nk:1169426803459379231>'
+        const loading = '<a:savage_loading:1326628731241889914>'
 
         const emojis = [dima, star, '🍒', '🍓']
 
@@ -237,7 +238,7 @@ module.exports = {
                 await interaction.editReply({ embeds: [jackpotEmbed] })
             }, 63000)
             setTimeout(async function () {
-                jackpotEmbed.setDescription('<a:loading_nk:1248874238350458911>')
+                jackpotEmbed.setDescription(loading)
                 await interaction.editReply({ embeds: [jackpotEmbed] })
             }, 66000)
             setTimeout(async function () {
@@ -285,13 +286,14 @@ module.exports = {
                     .setDescription('Você desbloqueou a conquista **The Final Casino Boss**!')
                     .setFooter({ text: `Você recebeu o cargo ${role.name} !` })
                 await interaction.editReply({ content: `<@&${role.id}>`, embeds: [jackpotEmbed] })
-                target.roles.add(role)
+                // target.roles.add(role) PARA NAO DAR O CARGO
             }, 80000)
 
         }
 
 
         const verifyResult = function (n) {
+
             if (slots[3] === slots[4] && slots[4] === slots[5]) {
                 if (slots[0] === slots[1] && slots[1] === slots[2] && slots[2] === slots[3] && slots[3] === slots[4] && slots[4] === slots[5] && slots[5] === slots[6] && slots[6] === slots[7] && slots[7] === slots[8]) {
                     jackpot(interaction)

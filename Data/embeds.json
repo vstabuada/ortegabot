@@ -1,0 +1,58 @@
+{
+    "embeds": [
+        {
+            "id": 1,
+            "embed": {
+                "author": {
+                    "name": "oi",
+                    "icon_url": null
+                },
+                "title": "teste",
+                "description": "teste2",
+                "footer": {
+                    "text": null,
+                    "icon_url": null
+                }
+            }
+        },
+        {
+            "id": 22,
+            "embed": {
+                "author": {
+                    "name": "tabuuhx",
+                    "icon_url": null
+                },
+                "title": "titulo",
+                "description": "descricao",
+                "color": 16777215,
+                "footer": {
+                    "text": "tabuuhx",
+                    "icon_url": null
+                }
+            }
+        },
+        {
+            "id": 14,
+            "embed": {
+                "author": {
+                    "name": "sajdfkasfd",
+                    "icon_url": "https://i.pinimg.com/736x/da/09/d6/da09d66b8e2ba44df9cc51184d82f841.jpg"
+                },
+                "title": "alsjkdflkjafs",
+                "url": "https://i.pinimg.com/736x/da/09/d6/da09d66b8e2ba44df9cc51184d82f841.jpg",
+                "description": "sdalfjkksldf",
+                "color": 16777215,
+                "image": {
+                    "url": "https://i.pinimg.com/736x/da/09/d6/da09d66b8e2ba44df9cc51184d82f841.jpg"
+                },
+                "thumbnail": {
+                    "url": "https://i.pinimg.com/736x/da/09/d6/da09d66b8e2ba44df9cc51184d82f841.jpg"
+                },
+                "footer": {
+                    "text": "kajsfdk",
+                    "icon_url": "https://i.pinimg.com/736x/da/09/d6/da09d66b8e2ba44df9cc51184d82f841.jpg"
+                }
+            }
+        }
+    ]
+}

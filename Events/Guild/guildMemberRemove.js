@@ -17,7 +17,7 @@ module.exports = {
                 .setColor('Red')
                 .setTimestamp()
 
-            await goodbyeChannel.send({ content: `<@${user.id}>`, embeds: [goodbyeEmbed] })
+            // await goodbyeChannel.send({ content: `<@${user.id}>`, embeds: [goodbyeEmbed] })
 
         } catch (e) {
             console.log(e)
